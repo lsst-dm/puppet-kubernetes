@@ -1,0 +1,9 @@
+---
+kubernetes::required_pkgs:
+  - kubelet
+  - kubeadm
+  - kubectl
+kubernetes::yumrepo_data:
+    baseurl: https://packages.cloud.google.com/yum/repos/kubernetes-el$releasever-$basearch
+    gpgcheck: "1"
+    gpgkey: "https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg"
